@@ -66,7 +66,7 @@
                      @endif
                      <input type="hidden" name="to" value="{{ $ps->contact_email }}">
                      <div class="col-md-12 mt-3">
-                        <button class="btn btn-primary submit-btn mybtn1" name="submit" type="submit">{{ __('Send Message') }}</button>
+                        <button class="btn btn-primary submit-btn mybtn1 py-1 rounded" name="submit" type="submit">{{ __('Send Message') }}</button>
                      </div>
                   </div>
                </form>

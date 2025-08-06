@@ -59,7 +59,7 @@
                         <input type="text"
                            id="phone"
                            class="form-control"
-                           placeholder="Enter your phone number"
+                           placeholder="phone number"
                            maxlength="10"
                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
                            required>
