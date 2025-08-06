@@ -10225,8 +10225,8 @@ p.text-left {
 }
 
 .subscribePreloader__thumb {
-	width: 35%;
-	height: 600px;
+	width: 30%;
+	height: 400px;
 	position: absolute;
 	left: 50%;
 	top: 33%;
@@ -11540,6 +11540,18 @@ body *::-webkit-scrollbar-thumb {
 }
 
 @media(max-width:425px) {
+	.heading-pure h3 {
+    font-size: 15px !important;
+}
+	.btn-accept{
+    padding: 0px 15px;
+    border-radius: 5px;
+	font-size: 11px;
+	}
+	.cookie-bar .cookie-bar-text {
+	margin: 2px 0;
+	font-size: 12px;
+}
 	.send-otp{
 		padding: 0px 10px ;
 	}
@@ -11781,8 +11793,8 @@ body *::-webkit-scrollbar-thumb {
 	font-weight: 700 !important;
 }
 .natural-item img {
-    height: 80px !important;
-    width: 100px;
+    height: 60px !important;
+    width: 80px;
 }
 }
 

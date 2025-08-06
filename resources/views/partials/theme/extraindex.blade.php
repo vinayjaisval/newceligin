@@ -61,7 +61,7 @@
     <div class="natural-title py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 col-sm-6 col-xs-6 col-6 text-center">
                     <div class="natural-item">
                         <img src="assets/images/image3__1_-removebg-preview.png">
                     </div>
@@ -71,7 +71,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 col-sm-6 col-xs-6 col-6 text-center">
                     <div class="natural-item">
                         <img src="assets/images/image21-removebg-preview.png">
                     </div>
@@ -81,7 +81,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 col-sm-6 col-xs-6 col-6 text-center">
                     <div class="natural-item">
                         <img src="assets/images/image13.png">
                     </div>
@@ -91,7 +91,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 col-sm-6 col-xs-6 col-6 text-center">
                     <div class="natural-item">
                         <img src="assets/images/image11.png">
                     </div>
