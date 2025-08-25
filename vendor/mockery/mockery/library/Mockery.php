@@ -206,7 +206,7 @@ class Mockery
      * @param class-string $fqn
      *
      * @return void
-     */
+      */
     public static function declareInterface($fqn)
     {
         static::declareType($fqn, 'interface');
@@ -216,7 +216,7 @@ class Mockery
      * Return instance of DUCKTYPE matcher.
      *
      * @template TDucktype
-     *
+     * 
      * @param TDucktype ...$args
      *
      * @return Ducktype

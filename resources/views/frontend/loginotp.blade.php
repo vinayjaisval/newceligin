@@ -58,7 +58,7 @@
                         <span class="input-group-text">+91</span>
                         <input type="text"
                            id="phone"
-                           class="form-control"
+                           class="form-control" 
                            placeholder="phone number"
                            maxlength="10"
                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"

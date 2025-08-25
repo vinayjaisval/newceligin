@@ -28,7 +28,7 @@ $pages = App\Models\Page::get();
 <!--==================== Newslatter Section End ====================-->
 
 <!--==================== Footer Section Start ====================-->
-<footer class="full-row bg-white border-footer p-0">
+<footer class="full-row  border-footer mt-5">
     <div class="container">
         <div class="row row-cols-xl-12 row-cols-md-2 row-cols-1">
             

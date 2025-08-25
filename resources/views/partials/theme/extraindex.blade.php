@@ -1,4 +1,204 @@
 <!--==================== Service Section Start ====================-->
+<style>
+    .offer-badge {
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .offer-badge span {
+        background: #2e6449;
+        color: #fff;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-left: 5px;
+        font-size: 11px;
+    }
+
+    .offer-title {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #000;
+    }
+
+    .offer-desc {
+        font-size: 13px;
+        color: #555;
+        margin: 15px 0;
+    }
+
+    .countdown {
+        font-size: 30px;
+        font-weight: bold;
+        color: #2e6449;
+        margin: 15px 0;
+    }
+
+    .offer-btn {
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .card {
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .offer-btn:hover {
+        background: #2e6449;
+    }
+
+    /* brand-ambassator */
+    .image-hint-across img,
+    .mg-beauty img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .product-card {
+        border: none;
+        /* background: #fff; */
+    }
+
+    .product-card img {
+        /* border-radius: 10px; */
+        width: 100%;
+        height: auto;
+    }
+
+    .product-title {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .price {
+        font-weight: bold;
+    }
+
+    .old-price {
+        text-decoration: line-through;
+        color: #777;
+        font-size: 13px;
+        margin-left: 5px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #000;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #000 !important;
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        content: 'next';
+        font-size: 25px !important;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+        font-size: 25px !important;
+    }
+
+    .tag {
+        right: 20px;
+        background: red;
+        color: #fff;
+        padding: 3px 20px;
+        top: 10px;
+        border-radius: 5px;
+    }
+
+    .tags {
+        right: 20px;
+        background: green;
+        color: #fff;
+        padding: 3px 20px;
+        top: 10px;
+        border-radius: 5px;
+    }
+
+
+    /* instagram-reels */
+    .insta-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.insta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.insta-header h2 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.insta-header img {
+  height: 20px;
+  margin-right: 8px;
+}
+
+.view-all {
+  font-size: 14px;
+  text-decoration: none;
+  color: #555;
+}
+
+.reel-card {
+  position: relative;
+  width: 150px;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.reel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <!-- <div class="full-row bg-light py-4">
     <div class="container">
         <div class="row row-cols-xl-3 row-cols-sm-2 row-cols-1 gy-4 gy-xl-0">
@@ -57,7 +257,7 @@
         </div>
     </div>
 </section> -->
-<section>
+<!-- <section>
     <div class="natural-title py-5">
         <div class="container">
             <div class="row">
@@ -67,7 +267,7 @@
                     </div>
                     <div class="heading-pure pt-3">
                         <h3>Celigin Is Against On Animal Test</h3>
-                        <!-- <p>We’re here for you anytime, anywhere!</p> -->
+                  
 
                     </div>
                 </div>
@@ -77,7 +277,7 @@
                     </div>
                     <div class="heading-pure pt-3">
                         <h3>European Cosmetics Certifier Registered With CNP</h3>
-                        <!-- <p>Enjoy our easy returns and exchanges policy</p> -->
+                
 
                     </div>
                 </div>
@@ -87,7 +287,7 @@
                     </div>
                     <div class="heading-pure pt-3">
                         <h3>Exclusive Member Discounts</h3>
-                        <!-- <p>Join our loyalty program for exclusive discounts</p> -->
+                 
 
                     </div>
                 </div>
@@ -97,47 +297,35 @@
                     </div>
                     <div class="heading-pure pt-3">
                         <h3>First-Time Buyer Discount</h3>
-                        <!-- <p>Get an exclusive 10% off on your first purchase</p> -->
+                    
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-
-
-
-<!-- ========================================fourth-banner======================================================== -->
-
-
-
-
-
-
-<!--==================== Service Section End ====================-->
+</section> -->
 
 
 @if($ps->top_big_trending==1)
 <!--==================== Top Collection Section Start ====================-->
-<div class="full-row bg-white mt-4">
+<div class="full-row bg-white mt-5">
     <div class="container">
         <div class="row">
             <div class="col">
                 <div class="top-collection-tab nav-tab-active-secondary">
-                    <ul class="nav nav-pills list-color-general justify-content-center mb-4">
+                    <!-- <ul class="nav nav-pills list-color-general justify-content-center mb-4">
                         <li class="nav-item">
                             <a class="nav-link active font-data" data-bs-toggle="pill" href="#pills-new-arrival-two">{{ __('
                                 All Product') }}</a>
                         </li>
 
-                        <!-- <li class="nav-item">
+                        < <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="pill" href="#pills-best-selling-two">{{ __('Best
                                 Selling') }}</a>
                         </li> -->
 
-                    </ul>
+                    <!-- </ul>  -->
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="pills-new-arrival-two">
                             <div class="products product-style-1">
@@ -155,7 +343,7 @@
                         <div class="tab-pane fade" id="pills-Trending-two">
                             <div class="products product-style-1">
                                 <div
-                                    class="row g-4 row-cols-xl-4 row-cols-md-3 row-cols-sm-2 row-cols-2 e-title-general e-title-hover-primary e-image-bg-light e-hover-image-zoom e-info-center">
+                                    class="row g-4 row-cols-xl-3 row-cols-md-3 row-cols-sm-2 row-cols-2 e-title-general e-title-hover-primary e-image-bg-light e-hover-image-zoom e-info-center">
                                     @foreach($trending_products as $prod)
                                     <div class="col">
                                         @include('partials.product.home-product')
@@ -198,12 +386,127 @@
 </div>
 <!--==================== Top Collection Section End ====================-->
 @endif
+
+<!-- ==========================================================card-product-============================================= -->
 <section>
+    <div class="classnew-arrivals">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="arrivals-title">
+                        <img src="assets/images/Container 1.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="arrivals-title">
+                        <img src="assets/images/Container 2.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="arrivals-title">
+                        <img src="assets/images/Container 3.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================our-best-sellers=========================================== -->
+<section>
+    <div class="container my-5">
+
+        <!-- Section Title -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-bold">Our Bestsellers</h3>
+            <a href="#" class="text-dark text-decoration-none">
+                Shop all products <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+        </div>
+
+        <!-- Swiper Slider -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 1.png" alt="product"></a>
+
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹6,693 <span class="old-price">₹7,437.50</span></p>
+                            <p class="product-title">Celigin royal intensive cream</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 2.png" alt="product"></a>
+                        <div class="tag position-absolute">
+                            <span>New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹12,771 <span class="old-price">₹14,491</span></p>
+                            <p class="product-title">Celigin cells queen</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 3.png" alt="product"></a>
+                        <div class="tags position-absolute">
+                            <span>Sale</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹2,992 <span class="old-price">₹3,325</span></p>
+                            <p class="product-title">Celigin daily sun finish</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 2.png" alt="product"></a>
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹4,331 <span class="old-price">₹4,812</span></p>
+                            <p class="product-title">Celigin re-furesh gelling mask</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 3.png" alt="product"></a>
+                        <div class="tags position-absolute">
+                            <span>Sale</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹2,599 <span class="old-price">₹2,887.50</span></p>
+                            <p class="product-title">Celigin radiant foam cleanser</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+<!-- <section>
     <div class="bodys-product-title">
 
     </div>
-</section>
-<Section>
+</section> -->
+<!-- <Section>
     <div class="natural-item-deeply">
         <div class="container">
             <div class="row">
@@ -275,37 +578,55 @@
             </div>
         </div>
     </div>
-</Section>
+</Section> -->
 
 <section>
     <div class="trending-title py-4">
-        <div class="text-center hint-across">
+        <!-- <div class="text-center hint-across">
             <span class="text-uppercase">Top Picks</span>
             <h3 class="fw-bold">New & Trending Products</h3>
-        </div>
+        </div> -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row mt-4">
                         <div class="col-lg-8">
-                            <div class="row">
-                                <div class="col-lg-4">
+                            <!-- <div class="row"> -->
+                            <!-- <div class="col-lg-4">
                                     <a href="{{url('item/celigin-all-day-perfect-sunscreen-50ml-with-coscor-1000ppm-jgu3897e53')}}"><img src="assets/images/Group-3.png" height="100%" class="bd-x"></a>
-                                </div>
-                                <div class="col-lg-8 mtd">
+                                </div> -->
+                            <!-- <div class="col-lg-8 mtd">
                                     <a href="{{url('how-to-use/night')}}"><img src="assets/images/Link.png" class="bd-x">
-                                </div>
-                                <div class="col-lg-8 mt-4">
+                                </div> -->
+                            <!-- <div class="col-lg-8 mt-4">
                                     <a href="{{url('item/celigin-all-day-perfect-sunscreen-50ml-with-coscor-1000ppm-jgu3897e53')}}"><img src="assets/images/Frame 1.png" class="bd-x"></a>
-                                </div>
-                                <div class="col-lg-4 mt-4">
-                                    <a href="{{url('item/celigin-signature-cell-biome-duo-cell-up-first-essence-50ml-with-coscor-10000ppm-vital-serum-50ml-with-coscor-30000ppm-lgt2449gis')}}">
-                                        <img src="assets/images/Group-9.png" height="100%" class="bd-x"></a>
-                                </div>
+                                </div> -->
+                            <div class="d-flex gap-5 align-items-baseline">
+                                <a href="{{url('item/celigin-signature-cell-biome-duo-cell-up-first-essence-50ml-with-coscor-10000ppm-vital-serum-50ml-with-coscor-30000ppm-lgt2449gis')}}">
+                                    <img src="assets/images/Group-9.png" height="350" class="bd-x"></a>
+                                <a href="{{url('item/celigin-daily-sun-finish-50ml-with-coscor-1000ppm-pon3478klj')}}">
+                                    <img src="assets/images/ffff.png" height="550" class="bd-x"></a>
+
                             </div>
                         </div>
                         <div class="col-lg-4 mtd">
-                            <a href="{{url('item/celigin-daily-sun-finish-50ml-with-coscor-1000ppm-pon3478klj')}}"><img src="assets/images/ffff.png" height="100%" class="bd-x"></a>
+                            <div class="offer-card py-4">
+                                <div class="offer-badge">
+                                    SPECIAL OFFER <span>-25%</span>
+                                </div>
+
+                                <div class="offer-title">
+                                    Celigin daily sun finish (50ml) with coscor 1,000ppm
+                                </div>
+
+                                <div class="offer-desc">
+                                    Experience superior sun protection with SPF 50+ and PA++ in our SUNFINISH sunscreen.
+                                </div>
+
+                                <div class="countdown" id="countdown">10 D : 20 H : 30 M : 45 S</div>
+
+                                <a href="#" class="offer-btn">Get Only $39.00</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -313,6 +634,100 @@
         </div>
     </div>
 </section>
+
+<!-- ===================================================hot-deals============================================ -->
+<section>
+    <div class="container my-5">
+
+        <!-- Section Title -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-bold">Hot Deals</h3>
+            <a href="#" class="text-dark text-decoration-none">
+                Shop all products <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+        </div>
+
+        <!-- Swiper Slider -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 1.png" alt="product"></a>
+
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹6,693 <span class="old-price">₹7,437.50</span></p>
+                            <p class="product-title">Celigin royal intensive cream</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 2.png" alt="product"></a>
+                        <div class="tag position-absolute">
+                            <span>New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹12,771 <span class="old-price">₹14,491</span></p>
+                            <p class="product-title">Celigin cells queen</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 3.png" alt="product"></a>
+                        <div class="tags position-absolute">
+                            <span>Sale</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹2,992 <span class="old-price">₹3,325</span></p>
+                            <p class="product-title">Celigin daily sun finish</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 2.png" alt="product"></a>
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹4,331 <span class="old-price">₹4,812</span></p>
+                            <p class="product-title">Celigin re-furesh gelling mask</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Container 3.png" alt="product"></a>
+                        <div class="tags position-absolute">
+                            <span>Sale</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="price lh-1">₹2,599 <span class="old-price">₹2,887.50</span></p>
+                            <p class="product-title">Celigin radiant foam cleanser</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------------------------------------instagram-reels-------------------------------------------- -->
+
+
 
 
 @if($ps->category==1)
@@ -341,6 +756,20 @@
 @endif
 <section>
     <div class="body-product-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class=" image-hint-across">
+                        <img src="assets/images/sliders/1734522338sharedimage1jpg.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mg-beauty">
+                        <img src="assets/images/sliders/1735814127image21png.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </section>
@@ -449,7 +878,7 @@
 
 
 
-<section>
+<!-- <section>
     <div class="eye-title py-5">
         <div class="container">
             <div class="row">
@@ -493,23 +922,18 @@
                                 Exfoliate and brighten, then hydrate and glow — it’s the ultimate skincare duo.
                                 Whether you're getting ready for a special moment or simply treating yourself to a dose of luxury, this duo will leave you with skin that’s glowing with radiance.</p>
                         </div>
-                        <!-- <div class="order-title-text mt-4">
-                            <div class="order-nigam-plan">
-                                {{-- <h4> <img src="assets/images/Icon45.png"><span>Valentine's Day Combo Offer! Get 25% off until February 14, 2025!</span> to get it by <span> Dec 18, 2024</span></h4> --}}
-                                <h4> <img src="assets/images/Icon (1).png"><span> 216 </span> Valentine's Day Combo Offer! Get 25% off until February 14, 2025!</h4>
-                            </div>
-                        </div> -->
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-</section>
+</section> -->
 
 
 
-<section>
+<!-- <section>
     <main>
         <div class="container-xxl py-5">
             <div class="container py-5">
@@ -520,56 +944,48 @@
                             data-bs-ride="carousel"
                             data-bs-interval="5000">
 
-                            <!-- Indicators -->
-                            <!-- <div class="carousel-indicators">
-                                @if($testimonials->count() > 0)
-                                    @foreach ($testimonials as $key => $item)
-                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$key}}"
-                                            class="@if($key == 0) active @endif" aria-current="true" aria-label="Slide {{$key+1}}"></button>
-                                    @endforeach
-                                @endif
-                            </div> -->
+                           
 
-                            <!-- Carousel Items -->
+                      
                             <div class="carousel-inner">
                                 @if($testimonials->count() > 0)
-                                    @foreach($testimonials as $key => $testi)
-                                        <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                                            <div class="row align-items-center px-4">
-                                                
-                                                <!-- Left: Image -->
-                                                <div class="col-md-6 text-center mb-4 mb-md-0">
-                                                    <a href="{{ url('testimonial').'/'.$testi->slug ?? "" }}">
-                                                        <img class="img-fluid rounded-circle shadow"
-                                                            src="{{ $testi->photo ? url('assets/images/blogs/'.$testi->photo) : url('assets/images/noimage.png') }}"
-                                                            style="width: 200px; height: 200px; object-fit: cover;">
-                                                    </a>
-                                                </div>
+                                @foreach($testimonials as $key => $testi)
+                                <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+                                    <div class="row align-items-center px-4">
 
-                                                <!-- Right: Text -->
-                                                <div class="col-md-6">
-                                                    <div class="testimonial-item ps-md-4">
-                                                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                                                        <span class="text-uppercase d-block mb-2">Testimonial</span>
-                                                        <h5 class="fs-4 textimal-text says-title fw-bold">{{ $testi->title ?? "" }}</h5>
-                                                        <p>{{ Str::limit($testi->details ?? "", 200) }}</p>
-                                                        <h6>{{ $testi->source ?? "" }}</h6>
-                                                        <div class="testimonial-rating mt-2">
-                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i><i class="far fa-star"></i>
-                                                    </div>
-                                                    </div>
-                                                    
-                                                   
-                                                </div>
-
-                                            </div>
+                                        
+                                        <div class="col-md-6 text-center mb-4 mb-md-0">
+                                            <a href="{{ url('testimonial').'/'.$testi->slug ?? "" }}">
+                                                <img class="img-fluid rounded-circle shadow"
+                                                    src="{{ $testi->photo ? url('assets/images/blogs/'.$testi->photo) : url('assets/images/noimage.png') }}"
+                                                    style="width: 200px; height: 200px; object-fit: cover;">
+                                            </a>
                                         </div>
-                                    @endforeach
+
+                                
+                                        <div class="col-md-6">
+                                            <div class="testimonial-item ps-md-4">
+                                                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                                                <span class="text-uppercase d-block mb-2">Testimonial</span>
+                                                <h5 class="fs-4 textimal-text says-title fw-bold">{{ $testi->title ?? "" }}</h5>
+                                                <p>{{ Str::limit($testi->details ?? "", 200) }}</p>
+                                                <h6>{{ $testi->source ?? "" }}</h6>
+                                                <div class="testimonial-rating mt-2">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                @endforeach
                                 @endif
                             </div>
 
-                            <!-- Optional Prev/Next Controls -->
+                
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
@@ -585,7 +1001,7 @@
             </div>
         </div>
     </main>
-</section>
+</section> -->
 
 
 </div>
@@ -599,12 +1015,21 @@
 
 <!-- ==================================================updated blog-================================================ -->
 <section>
-    <div class="blogs-title-update py-5">
-        <div class="text-center hint-across">
+    <div class="blogs-title-update mt-5">
+        <!-- <div class="text-center hint-across">
             <span class="text-uppercase">Instant</span>
             <h3 class="fw-bold">News & Updated Blogs</h3>
-        </div>
+        </div> -->
         <div class="container mt-4">
+            <div class="container my-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="fw-bold mb-0">Blogs</h4>
+                    <a href="#" class="text-decoration-none fw-medium text-dark d-flex align-items-center">
+                        View all post
+                        <span class="ms-1">→</span>
+                    </a>
+                </div>
+            </div>
             <div class="row">
                 @foreach($blogs as $blog)
                 <div class="col-lg-4">
@@ -613,11 +1038,12 @@
                     </div>
 
                     <!-- assets/images/blogs -->
-                    <hr>
-                    <div class="cbd-confo">
+                    <!-- <hr> -->
+                    <div class="cbd-confo mt-2">
                         <h2>{{ Str::limit($blog->title, 25) }}</h2>
-                        <p>{!! Str::limit(strip_tags($blog->details), 48) !!}...</p>
-                        <a href="{{ route('front.blogshow',$blog->slug) }}">Read more</a>
+                        <!-- <p>{!! Str::limit(strip_tags($blog->details), 48) !!}...</p> -->
+                        <a href="{{ route('front.blogshow',$blog->slug) }}">Read more <i class="fas fa-arrow-right ms-1"></i></a>
+
                     </div>
                 </div>
                 @endforeach
@@ -628,7 +1054,7 @@
 
 
 <!-- ==================================================instagram-section-================================================ -->
-<section>
+<!-- <section>
     <div class="instagram-title pb-5">
         <div class="container">
             <div class="row">
@@ -655,7 +1081,7 @@
                 </div>
             </div>
         </div>
-</section>
+</section> -->
 
 <!--==================== Our Blog Section Start ====================-->
 <!-- @if($ps->blog==1)
@@ -698,11 +1124,48 @@
 <!-- @endif -->
 
 @includeIf('partials.global.common-footer')
+<!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Bootstrap & Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4, // default (for very large screens)
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            576: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 3
+            },
+            992: {
+                slidesPerView: 4
+            },
+            //   1200: { slidesPerView: 5 } // 👈 show 5 cards on desktops
+        }
+    });
+</script>
+
 <!-- ✅ Load jQuery first -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="{{ asset('assets/front/js/extraindex.js') }}"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         const carousel = document.querySelector('#carouselExampleCaptions');
         if (carousel) {
             new bootstrap.Carousel(carousel, {
@@ -713,4 +1176,43 @@
             });
         }
     });
+</script>
+<script>
+    // Countdown Timer (Set Offer End Date)
+    const countdownEl = document.getElementById('countdown');
+    const offerEnd = new Date().getTime() + (10 * 24 * 60 * 60 * 1000); // 10 days from now
+
+    setInterval(() => {
+        let now = new Date().getTime();
+        let distance = offerEnd - now;
+
+        if (distance < 0) {
+            countdownEl.innerHTML = "OFFER ENDED";
+            return;
+        }
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.innerHTML = `${days} D : ${hours} H : ${minutes} M : ${seconds} S`;
+    }, 1000);
+</script>
+<script>
+  const swiper = new Swiper('.insta-swiper', {
+    slidesPerView: 2.5,
+    spaceBetween: 15,
+    breakpoints: {
+      640: {
+        slidesPerView: 3.5,
+      },
+      768: {
+        slidesPerView: 4.5,
+      },
+      1024: {
+        slidesPerView: 5.5,
+      }
+    }
+  });
 </script>

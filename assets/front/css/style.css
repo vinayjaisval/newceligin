@@ -7736,8 +7736,9 @@ table.cart {
 }
 
 .border-footer {
-	border-top: 2px solid var(--theme-gray-color);
-	border-bottom: 2px solid var(--theme-gray-color);
+	/* border-top: 2px solid var(--theme-gray-color);
+	border-bottom: 2px solid var(--theme-gray-color); */
+	    background: #f8f8f8;
 }
 
 .border-footer .col+.col {
@@ -12320,7 +12321,7 @@ body *::-webkit-scrollbar-thumb {
  .comfirm-track h4{
 	font-size: 16px;
  }
- .natural-title, .trending-title, .skin-prodcut, .core-collection {
+ .natural-title,  .skin-prodcut, .core-collection {
 	background-color: #fef7ee;
  }
  .natural-item img{
@@ -12521,13 +12522,13 @@ body *::-webkit-scrollbar-thumb {
 	color: #fff;
 	margin: 7px;
 }
-.body-product-title{
+/* .body-product-title{
 	background-image: url('../../images/comingsoon.png');
 	width: 100%;
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 .body-product-titles{
 	background-image: url('../../images/banner87.png');
 	width: 100%;
@@ -12582,7 +12583,7 @@ body *::-webkit-scrollbar-thumb {
 .nav img{
 	width: 20px;
 }
-.slider-secendory, .blogs-title-update, .instagram-title {
+.slider-secendory,  .instagram-title {
 	background-color: #fef7ee;
 }
 
@@ -12601,7 +12602,7 @@ body *::-webkit-scrollbar-thumb {
     letter-spacing: 2px;
     color: #000;
     font-size: 12px;
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #000; */
 }
 .booking-title{
 	letter-spacing: 2px;
@@ -12696,7 +12697,7 @@ main {
   i.fa-arrow-right,
  i.fa-arrow-left {
 	background: none;
-	border: 2px solid #000;
+	/* border: 2px solid #000; */
 	color: #000;
 	padding: 10px;
 	border-radius: 100%;
@@ -12798,9 +12799,9 @@ main {
 .fa-quote-left {
 	color: #bb8a8a!important;
 }
-.making-cbd img, .inatsgarm-us img, .core-title-collection img, .skin-routine-title img, .bd-x{
+/* .making-cbd img, .inatsgarm-us img, .core-title-collection img, .skin-routine-title img, .bd-x{
 	border-radius: 10px;
-}
+} */
 
 
 #slideshow img {

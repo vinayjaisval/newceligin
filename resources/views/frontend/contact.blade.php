@@ -73,7 +73,7 @@
             </div>
          </div>
          <div class="col-lg-5 col-md-5">
-            <h3 class="down-line mb-5">{{ __('Get In Touch') }}</h3>
+            <h3 class="down-line mb-5">{{ __('Get In Touch') }}</h3> 
             <div class="d-flex mb-3">
                <ul>
                   @if($ps->street != null)

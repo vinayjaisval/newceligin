@@ -108,7 +108,7 @@
 </section> -->
 
 <!-- =================================natural-section============================================= -->
-<section>
+<!-- <section>
     <div class="natural-title py-5">
         <div class="container">
             <div class="row">
@@ -118,7 +118,7 @@
                     </div>
                     <div class="heading-pure pt-3">
                         <h3>Celigin Is Against On Animal Test</h3>
-                        <!-- <p>We’re here for you anytime, anywhere!</p> -->
+                   
                  
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="heading-pure pt-3">
                         <h3>European Cosmetics Certifier Registered With CNP</h3>
-                        <!-- <p>Enjoy our easy returns and exchanges policy</p> -->
+                      
                    
                     </div>
                 </div>
@@ -138,7 +138,7 @@
                     </div>
                     <div class="heading-pure pt-3">
                         <h3>Exclusive Member Discounts</h3>
-                        <!-- <p>Join our loyalty program for exclusive discounts</p> -->
+                 
                     
                     </div>
                 </div>
@@ -148,14 +148,14 @@
                     </div>
                     <div class="heading-pure pt-3">
                         <h3>First-Time Buyer Discount</h3>
-                        <!-- <p>Get an exclusive 10% off on your first purchase</p> -->
+                   
                      
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- =============================================deeply-natural============================================== -->
  <Section>
