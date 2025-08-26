@@ -260,6 +260,9 @@ a:active {
 }
 
 @media screen and (max-width: 991px) {
+	.mg-beauty{
+		margin-top: 20px;
+	}
 	.autocomplete-items {
 		width: 100%;
 		max-width: 320px;
@@ -2599,7 +2602,7 @@ header.fixed-top {
 }
 
 @media screen and (min-width: 992px) {
-    .ecommerce-header .main-nav-sticky {
+    .ecommerce-header .main-nav-sticky, .logo-trenslate-new {
         display: none;
     }
 }
@@ -2701,19 +2704,20 @@ header.fixed-top {
 .wishlist-view span.header-wishlist-count,
 .refresh-view span.header-compare-count,
 [class*="header-cart-"] .cart .cart-icon .header-cart-count {
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	background-color: #bd2222;
-	color: var(--theme-white-color);
-	border-radius: 50%;
-	text-align: center;
-	font-size: 11px;
-	line-height: 25px;
-	top: -4px;
-	left: -4px;
-	font-family: 'Open Sans';
+	    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #bd2222;
+    color: var(--theme-white-color);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+    top: 4px;
+    right: 0px;
+
 }
+
 
 [class*="header-cart-"] .cart .cart-wrap {
 	display: flex;
@@ -11035,11 +11039,13 @@ li.addtocart a:hover {
 }
 @media screen and (max-width: 1199px) and (min-width:992px) {
 	
-	.body-product-title, .bodys-product-title, .body-products-title, .body-product-titles {
+	/* .body-product-title, .bodys-product-title, .body-products-title, .body-product-titles {
 		width: 100% !important;
-		height: 395px !important;
+		height: 395px !important; */
+/* } */
+.product-search-one{
+	display: none;
 }
-
 }
 @media(max-width:1099px) and (min-width:992px){
 	.inatsgarm-us img {
@@ -11054,10 +11060,10 @@ li.addtocart a:hover {
 		width: 16px;
 		height: 16px;
 	}
-	.body-product-title, .bodys-product-title, .body-products-title, .body-product-titles {
+	/* .body-product-title, .bodys-product-title, .body-products-title, .body-product-titles {
 		width: 100% !important;
 		height: 310px !important;
-}
+} */
 
 }
 
@@ -11066,10 +11072,23 @@ li.addtocart a:hover {
 	.nextBtn {
 		right: 10px;
 	}
-
 	.prevBtn {
 		left: 10px;
 	}
+	.arrivals-title{
+		margin-top: 20px;
+	}
+	.align-items-baseline{
+		flex-direction: column;
+	
+	}
+	.align-items-baseline img{
+			width: 100%;
+		height: auto;
+	}
+    .instagram-resd {
+     width: 30px;
+	}	
 }
 
 @media screen and (max-width: 575px) {
@@ -11463,6 +11482,15 @@ body *::-webkit-scrollbar-thumb {
 }
 
 @media (max-width:767px) and (min-width:426px) {
+	/* .image-hint-across img, .mg-beauty img {
+    height: auto !important;
+   
+}
+ .extra-index-glow{
+	margin-top: 80px;
+ } */
+
+
 	body *::-webkit-scrollbar {
 		height: 1px;
 		color: #bfbfbf;
@@ -11479,10 +11507,10 @@ body *::-webkit-scrollbar-thumb {
 		width: 100% !important;
 	}
 
-	.body-product-title, .bodys-product-title, .body-products-title, .body-product-titles {
+	/* .body-product-title, .bodys-product-title, .body-products-title, .body-product-titles {
 		width: 100% !important;
 		height: 200px !important;
-}
+} */
 
 #slideshow img {
     /* height: 246px; */
@@ -11541,6 +11569,10 @@ body *::-webkit-scrollbar-thumb {
 }
 
 @media(max-width:425px) {
+	.image-hint-across img, .mg-beauty img{
+		height: auto !important;
+	}
+	
 	.heading-pure h3 {
     font-size: 15px !important;
 }
@@ -11641,11 +11673,11 @@ body *::-webkit-scrollbar-thumb {
     height: inherit !important;
     width: 100% !important;
 }
-.body-product-title, .bodys-product-title, .body-products-title, .body-product-titles {
+/* .body-product-title, .bodys-product-title, .body-products-title, .body-product-titles {
     width: 100% !important;
     height: 170px !important;
 
-}
+} */
 .skin-routine-title {
 	margin-top: 20px;
 }
@@ -11661,9 +11693,9 @@ body *::-webkit-scrollbar-thumb {
 .care-image img {
 	border-radius: 10px;
 }
-.position-relative, .card {
-	/* width: 100% !important; */
-	margin-top: 20px;
+/* .position-relative, .card {
+	width: 100% !important;
+	margin-top: 20px; */
 }
 .d-fl{
 	flex-direction: column;
@@ -13864,4 +13896,21 @@ button.btn.btn-secondary.rounded-right-pill.text-white:hover {
 
 .panel p, .panel ul li{
 	font-size: 15px !important;
+}
+
+
+/* footer */
+.newsletter-input {
+    flex: 1;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.newsletter-btn {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }

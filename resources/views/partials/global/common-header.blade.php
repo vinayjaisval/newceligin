@@ -37,6 +37,7 @@
         color: #000;
         text-decoration: underline;
         margin-left: 5px;
+        font-weight: 600;
     }
 
     /* Close Button */
@@ -55,7 +56,7 @@
 
     .search-box {
         position: relative;
-        width: 250px;
+        width: 100%;
         max-width: 100%;
     }
 
@@ -92,6 +93,9 @@
         .navbar-expand-lg {
             flex-wrap: nowrap;
             justify-content: center;
+        }
+        .my-account-dropdown {
+            display: none !important; 
         }
     }
 
@@ -218,18 +222,18 @@
     <div class="main-nav py-4 d-none d-lg-block pdng bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3">
+                <div class="col-lg-3">
                     <div class="search-view">
                         <div class="search-box">
                             <a href="#" class="search-pop top-quantity d-flex align-items-center text-decoration-none">
                                 <input type="text" placeholder="Search">
-                                <i class="flaticon-search flat-mini text-dark mx-auto"></i>
+                                <i class="flaticon-search flat-mini text-dark mx-2"></i>
                             </a>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-xl-6 col-lg-9">
+                <div class="col-lg-6">
                     <nav class="navbar navbar-expand-lg nav-dark nav-primary-hover nav-line-active">
                         <a class="navbar-brand" href="{{ route('front.index') }}">
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -242,8 +246,8 @@
 
                     </nav>
                 </div>
-                <div class="col-xl-3 col-lg-3">
-                    <div class="margin-right-1 d-flex align-items-center justify-content-end h-100">
+                <div class=" col-lg-3">
+                    <div class=" d-flex align-items-center justify-content-end h-100">
                         <div class="product-search-one flex-grow-1 global-search touch-screen-view">
                             <form id="searchForm" class="search-form form-inline search-pill-shape"
                                 action="{{ route('front.category', [Request::route('category'),Request::route('subcategory'),Request::route('childcategory')]) }}"
@@ -275,6 +279,33 @@
 
                             <a href="{{ route('user-wishlists') }}" class="cart " title="View Wishlist">
                                 <div class="cart-icon">
+                                   <i class="flaticon-user flat-mini mx-auto text-dark"></i>
+                                    <!-- <span
+                                        class="header-cart-count " id="wishlist-count">{{
+                                        Auth::guard('web')->user()->wishlistCount()
+                                        }}</span> -->
+                                </div>
+                            </a>
+
+                            @else
+
+                            <a href="{{ route('user.login') }}" class="cart " title="View Wishlist">
+                                <div class="cart-icon"><i class="flaticon-user flat-mini mx-auto text-dark"></i>
+                                    <!-- <span
+                                        class="header-cart-count" id="wishlist-count">{{ 0 }}</span> -->
+                                </div>
+                            </a>
+
+                            
+
+                            @endif
+                        </div>
+
+                        <div class="header-cart-1">
+                            @if (Auth::guard('web')->check())
+
+                            <a href="{{ route('user-wishlists') }}" class="cart " title="View Wishlist">
+                                <div class="cart-icon">
                                     <i class="flaticon-like flat-mini mx-auto text-dark"></i>
                                     <!-- <span
                                         class="header-cart-count " id="wishlist-count">{{
@@ -292,8 +323,11 @@
                                 </div>
                             </a>
 
+                            
+
                             @endif
                         </div>
+                          
 
                         <!-- <div class="header-cart-1">
                             <a href="{{ route('front.cart') }}" class="cart " title="Compare">
@@ -450,9 +484,9 @@
                                 </div>
                             </nav>
                         </div>
-                        <!-- <a class="navbar-brand" href="{{route('front.index')}}">
-                            <img class="nav-logo"
-                                src="{{asset('assets/images/'.$gs->logo)}}" alt="Image not found !"></a> -->
+                        <a class="navbar-brand" href="{{route('front.index')}}">
+                            <img class="nav-logo logo-trenslate-new"
+                                src="{{asset('assets/images/'.$gs->logo)}}" alt="Image not found !"></a>
 
                     </div>
                 </div>

@@ -196,6 +196,10 @@
   border-radius: 50%;
   padding: 5px;
 }
+.card .reels-tranding{
+    width: 100% !important;
+    height: 400px !important;
+}
 
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -392,19 +396,19 @@
     <div class="classnew-arrivals">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="arrivals-title">
-                        <img src="assets/images/Container 1.png"></a>
+                        <img src="assets/images/Container 1.png">
                     </div>
                 </div>
-                <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-6 col-12">
                     <div class="arrivals-title">
-                        <img src="assets/images/Container 2.png"></a>
+                        <img src="assets/images/Container 2.png">
                     </div>
                 </div>
-                <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-12">
                     <div class="arrivals-title">
-                        <img src="assets/images/Container 3.png"></a>
+                        <img src="assets/images/Container 3.png">
                     </div>
                 </div>
             </div>
@@ -414,10 +418,10 @@
 
 <!-- =====================================================our-best-sellers=========================================== -->
 <section>
-    <div class="container my-5">
+    <div class="container mt-5">
 
         <!-- Section Title -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
             <h3 class="fw-bold">Our Bestsellers</h3>
             <a href="#" class="text-dark text-decoration-none">
                 Shop all products <i class="fas fa-arrow-right ms-1"></i>
@@ -431,7 +435,7 @@
                 <!-- Slide 1 -->
                 <div class="swiper-slide position-relative">
                     <div class="card product-card">
-                        <img src="assets/images/Container 1.png" alt="product"></a>
+                        <img src="assets/images/Container 1.png" alt="product">
 
                         <div class="card-body text-center">
                             <p class="price lh-1">₹6,693 <span class="old-price">₹7,437.50</span></p>
@@ -443,7 +447,7 @@
                 <!-- Slide 2 -->
                 <div class="swiper-slide position-relative">
                     <div class="card product-card">
-                        <img src="assets/images/Container 2.png" alt="product"></a>
+                        <img src="assets/images/Container 2.png" alt="product">
                         <div class="tag position-absolute">
                             <span>New</span>
                         </div>
@@ -457,7 +461,7 @@
                 <!-- Slide 3 -->
                 <div class="swiper-slide position-relative">
                     <div class="card product-card">
-                        <img src="assets/images/Container 3.png" alt="product"></a>
+                        <img src="assets/images/Container 3.png" alt="product">
                         <div class="tags position-absolute">
                             <span>Sale</span>
                         </div>
@@ -471,7 +475,7 @@
                 <!-- Slide 4 -->
                 <div class="swiper-slide">
                     <div class="card product-card">
-                        <img src="assets/images/Container 2.png" alt="product"></a>
+                        <img src="assets/images/Container 2.png" alt="product">
                         <div class="card-body text-center">
                             <p class="price lh-1">₹4,331 <span class="old-price">₹4,812</span></p>
                             <p class="product-title">Celigin re-furesh gelling mask</p>
@@ -482,7 +486,7 @@
                 <!-- Slide 5 -->
                 <div class="swiper-slide position-relative">
                     <div class="card product-card">
-                        <img src="assets/images/Container 3.png" alt="product"></a>
+                        <img src="assets/images/Container 3.png" alt="product">
                         <div class="tags position-absolute">
                             <span>Sale</span>
                         </div>
@@ -654,7 +658,7 @@
                 <!-- Slide 1 -->
                 <div class="swiper-slide position-relative">
                     <div class="card product-card">
-                        <img src="assets/images/Container 1.png" alt="product"></a>
+                        <img src="assets/images/Container 1.png" alt="product">
 
                         <div class="card-body text-center">
                             <p class="price lh-1">₹6,693 <span class="old-price">₹7,437.50</span></p>
@@ -666,7 +670,7 @@
                 <!-- Slide 2 -->
                 <div class="swiper-slide position-relative">
                     <div class="card product-card">
-                        <img src="assets/images/Container 2.png" alt="product"></a>
+                        <img src="assets/images/Container 2.png" alt="product">
                         <div class="tag position-absolute">
                             <span>New</span>
                         </div>
@@ -680,7 +684,7 @@
                 <!-- Slide 3 -->
                 <div class="swiper-slide position-relative">
                     <div class="card product-card">
-                        <img src="assets/images/Container 3.png" alt="product"></a>
+                        <img src="assets/images/Container 3.png" alt="product">
                         <div class="tags position-absolute">
                             <span>Sale</span>
                         </div>
@@ -694,7 +698,7 @@
                 <!-- Slide 4 -->
                 <div class="swiper-slide">
                     <div class="card product-card">
-                        <img src="assets/images/Container 2.png" alt="product"></a>
+                        <img src="assets/images/Container 2.png" alt="product">
                         <div class="card-body text-center">
                             <p class="price lh-1">₹4,331 <span class="old-price">₹4,812</span></p>
                             <p class="product-title">Celigin re-furesh gelling mask</p>
@@ -705,7 +709,7 @@
                 <!-- Slide 5 -->
                 <div class="swiper-slide position-relative">
                     <div class="card product-card">
-                        <img src="assets/images/Container 3.png" alt="product"></a>
+                        <img src="assets/images/Container 3.png" alt="product">
                         <div class="tags position-absolute">
                             <span>Sale</span>
                         </div>
@@ -725,8 +729,73 @@
     </div>
 </section>
 
-<!-- -------------------------------------------------------instagram-reels-------------------------------------------- -->
+<!-- -------------------------------------------------------instagram-reels Start-------------------------------------------- -->
 
+<section>
+    <div class="container mt-5">
+
+        <!-- Section Title -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="fw-bold"><img src="assets/images/instagram 1.png" class="mx-3 instagram-resd"> Instagram Feed</h3>
+            <a href="#" class="text-dark text-decoration-none">
+                View all Feeds <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+        </div>
+
+        <!-- Swiper Slider -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                        <img src="assets/images/Frame 20.png" alt="Reels" class="reels-tranding">
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                      <img src="assets/images/Frame 21.png" alt="Reels" class="reels-tranding">
+                       
+                      
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                       <img src="assets/images/Frame 22.png" alt="Reels" class="reels-tranding">
+                       
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="card product-card">
+                       <img src="assets/images/Frame 23.png" alt="Reels" class="reels-tranding">
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide position-relative">
+                    <div class="card product-card">
+                    <img src="assets/images/Frame 24.png" alt="Reels" class="reels-tranding">
+                     
+                </div>
+
+            </div>
+
+            <!-- Navigation arrows -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+        </div>
+    </div>
+</section>
+
+
+
+<!-- -------------------------------------------------------instagram-reels End-------------------------------------------- -->
 
 
 
@@ -1020,16 +1089,15 @@
             <span class="text-uppercase">Instant</span>
             <h3 class="fw-bold">News & Updated Blogs</h3>
         </div> -->
-        <div class="container mt-4">
-            <div class="container my-4">
-                <div class="d-flex justify-content-between align-items-center">
+        <div class="container extra-index-glow">
+                <div class="d-flex justify-content-between align-items-center mb-3">
                     <h4 class="fw-bold mb-0">Blogs</h4>
                     <a href="#" class="text-decoration-none fw-medium text-dark d-flex align-items-center">
                         View all post
                         <span class="ms-1">→</span>
                     </a>
                 </div>
-            </div>
+           
             <div class="row">
                 @foreach($blogs as $blog)
                 <div class="col-lg-4">
@@ -1083,6 +1151,7 @@
         </div>
 </section> -->
 
+
 <!--==================== Our Blog Section Start ====================-->
 <!-- @if($ps->blog==1)
 <div class="full-row ">
@@ -1135,10 +1204,10 @@
         slidesPerView: 4, // default (for very large screens)
         spaceBetween: 20,
         loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

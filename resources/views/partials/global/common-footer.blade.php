@@ -91,7 +91,7 @@ $pages = App\Models\Page::get();
 <!--==================== Footer Section Start ====================-->
 <footer class="full-row  border-footer mt-5">
     <div class="container">
-        <div class="row row-cols-xl-12 row-cols-md-2 row-cols-1">
+        <div class="row row-cols-xl-12  row-cols-md-2 row-cols-sm-2 row-cols-1">
 
 
             <div class="col-md-4">
@@ -207,8 +207,13 @@ $pages = App\Models\Page::get();
 
             <div class="col-md-4">
                 <div class="footer-widget widget-nav my-5">
-                    <h6 class="widget-title mb-sm-4">{{ __('Recent Post') }}</h6>
-                    <ul>
+                    <h6 class="widget-title mb-sm-2">{{ __('Recent Post') }}</h6>
+                    <span>Enter your email below to be the first to know about new collections and product launches.</span>
+                   <form class="newsletter-form d-flex mt-4">
+                        <input type="email" class="newsletter-input" placeholder="Enter your Email Address">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                    <!-- <ul>
                         @foreach ($footer_blogs as $footer_blog)
                         <li>
                             <div class="post mb-3">
@@ -228,7 +233,7 @@ $pages = App\Models\Page::get();
                             </div>
                         </li>
                         @endforeach
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
